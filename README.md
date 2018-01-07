@@ -5,7 +5,7 @@ This project shows how serverless, event-driven architectures can be used to exe
 
 This application shows you two OpenWhisk actions (written in JavaScript) that write and read text and image data to Cloudant, a hosted Apache CouchDB service. The scenario demonstrates how actions can work with data services and execute logic in response to database changes.
 
-One action connects to Cloudant and inserts text and binary data as an attachment. The action is defined with package variables that provide it with Cloudant credentials as environment variables. This action is then uploaded to the OpenWhisk platform where it can be invoked manually to test.
+One action connects to Cloudant and inserts text and binary data as an attachment. The action is defined with package variables that provide it with Cloudant credentials as environment variables. This action is uploaded to the OpenWhisk platform where it can be invoked manually to test.
 
 A second action responds to the changes that were inserted into Cloudant by the first action. Instead of being manually invoked, the developer defines a trigger and mapping rule that binds the action to the Cloudant database and responds to changes.
 
